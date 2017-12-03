@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+
+        android:text="위치검색"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/naver"
+        android:layout_gravity="center_vertical|right"
+        android:layout_alignTop="@+id/together"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="같이해요"
+        android:id="@+id/together"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginRight="51dp"
+        android:layout_marginEnd="51dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#ffffff">
+
+    <!-- Name Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="작성자"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="25dp"
+        android:textColor="#050000" />
+
+    <!-- Input Name -->
+    <EditText android:id="@+id/inputName2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:background="@drawable/buttonborder"
+        android:layout_marginBottom="15dip"
+        android:singleLine="true"
+        android:textColor="#010000"
+        android:layout_weight="0.13" />
+
+    <!-- Price Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="25dp"
+        android:textColor="#000000" />
+
+    <!-- Input Price -->
+    <EditText android:id="@+id/inputPrice2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:background="@drawable/buttonborder"
+        android:layout_marginBottom="15dip"
+        android:singleLine="true"
+        android:inputType="numberDecimal"
+        android:textColor="#020000"
+        android:layout_weight="0.13" />
+
+    <!-- Description Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="내용"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="25dp"
+        android:textColor="#030000" />
+
+    <!-- Input description -->
+    <EditText android:id="@+id/inputDesc2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:lines="4"
+        android:gravity="top"
+        android:background="@drawable/buttonborder"
+        android:layout_weight="0.71"
+        android:textColor="#010000" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 &lt;삭제,수정 할시 입력하시오>"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="20dp"
+        android:id="@+id/textView2"
+        android:textColor="#020000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonborder"
+        android:ems="10"
+        android:id="@+id/PRIKEY"
+        android:textColor="#020000"
+        android:layout_weight="0.11" />
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+        <!-- Button Create Product -->
+        <Button android:id="@+id/btnSave"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:text="수정"
+            android:onClick="update"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="#050000"
+            android:background="@drawable/buttonborder" />
+
+        <!-- Button Create Product -->
+        <Button
+            android:id="@+id/Delete"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:text="삭제"
+            android:onClick="delete"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="#030000"
+            android:background="@drawable/buttonborder" />
+    </LinearLayout>
+
+</LinearLayout>

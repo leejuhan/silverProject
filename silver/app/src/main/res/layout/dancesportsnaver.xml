@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/dancesportsnavermap">
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dancelistView"
+        android:choiceMode="singleChoice"
+        android:listSelector="#cbc6c6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/linear" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:layout_below="@+id/dancesportsnavermap"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="대중교통"
+            android:layout_weight="1"
+            android:id="@+id/danavigationbutton"
+            android:textStyle="bold"
+
+            android:layout_below="@+id/dancesportsnavermap"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="길찾기"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:id="@+id/dafindload"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지도보기"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:id="@+id/dashowmap"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_above="@+id/dancelistView"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주소정보"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:id="@+id/dadetailbutton"
+
+            android:layout_gravity="right"
+
+            android:layout_below="@+id/dancesportsnavermap"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

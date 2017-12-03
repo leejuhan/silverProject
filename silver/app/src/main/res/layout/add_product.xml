@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#ffffff">
+
+    <!-- Name Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="작성자"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="20dp"
+        android:textColor="#030000" />
+
+    <!-- Input Name -->
+    <EditText android:id="@+id/inputName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:singleLine="true"
+        android:textColor="#050000"
+        android:background="@drawable/buttonborder"  />
+
+    <!-- Price Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="20dp"
+        android:textColor="#030000" />
+
+    <!-- Input Price -->
+    <EditText android:id="@+id/inputPrice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:singleLine="true"
+        android:textColor="#050000"
+        android:background="@drawable/buttonborder"  />
+
+    <!-- Description Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="내용"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="20dp"
+        android:textColor="#050000" />
+
+    <!-- Input description -->
+    <EditText android:id="@+id/inputDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:lines="4"
+        android:gravity="top"
+        android:background="@drawable/buttonborder"
+        android:layout_weight="0.79"
+        android:textColor="#050000"
+       />
+
+    <!-- Button Create Product -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="20dp"
+        android:id="@+id/textView"
+        android:textColor="#040000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:background="@drawable/buttonborder"
+        android:id="@+id/inputpri"
+        android:textColor="#050000" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="bottom">
+
+        <Button android:id="@+id/btnCreateProduct"
+            android:layout_width="fill_parent"
+            android:layout_height="77dp"
+            android:text="글 작성 완료"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            android:background="@drawable/buttonborder"
+            android:textColor="#020000" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/computerschoolnavermap">
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comlistView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:choiceMode="singleChoice"
+        android:listSelector="#cbc6c6"
+        android:layout_below="@+id/linearLayout" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/computerschoolnavermap"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="대중교통"
+            android:id="@+id/cpnavigationbutton"
+            android:layout_below="@+id/computerschoolnavermap"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="길찾기"
+            android:id="@+id/cpfindload"
+            android:layout_weight="1"
+            android:layout_above="@+id/comlistView"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/cpnavigationbutton"
+            android:layout_toEndOf="@+id/cpnavigationbutton"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지도보기"
+            android:id="@+id/cpshowmap"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_below="@+id/computerschoolnavermap"
+            android:layout_toLeftOf="@+id/cpdetailbutton"
+            android:layout_toStartOf="@+id/cpdetailbutton"
+            android:layout_weight="1"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cpdetailbutton"
+            android:layout_weight="1"
+            android:layout_below="@+id/computerschoolnavermap"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="주소정보"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

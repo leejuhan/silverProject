@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:weightSum="1"
+    android:background="#ffffff">
+
+    <!--  Sample Dashboard screen with Two buttons -->
+    <!--  Button to view all products screen -->
+
+    <LinearLayout
+        android:id="@+id/boardmain"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="354dp"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        >
+
+        <Button android:id="@+id/btnViewProducts"
+            android:layout_width="fill_parent"
+            android:layout_height="450px"
+            android:text="게시판 글보기"
+            android:layout_weight="0.25"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="20dp"
+            android:background="@drawable/buttonborder"
+            android:textColor="#040000" />
+
+        <Button android:id="@+id/btnCreateProduct"
+            android:layout_width="match_parent"
+            android:layout_height="450px"
+            android:text="글 작성하기"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/btnViewProducts"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="20dp"
+            android:background="@drawable/buttonborder"
+            android:textColor="#050000" />
+    </RelativeLayout>
+
+    <!--  Button to create a new product screen -->
+
+
+</LinearLayout>

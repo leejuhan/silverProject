@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/gateballnavermap"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gatelistView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:choiceMode="singleChoice"
+        android:listSelector="#cbc6c6"
+        android:layout_below="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gateballnavermap"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="대중교통"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:id="@+id/ganavigationbutton"
+            android:layout_above="@+id/gatelistView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="길찾기"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:id="@+id/gafindload"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지도보기"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:id="@+id/gashowmap"
+            android:layout_gravity="center_horizontal"
+            android:layout_above="@+id/gatelistView"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상세보기"
+            android:textStyle="bold"
+            android:id="@+id/gadetailinfo"
+            android:layout_weight="1"
+            android:layout_below="@+id/gateballnavermap"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
